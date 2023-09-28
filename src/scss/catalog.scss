@@ -1,0 +1,126 @@
+.image-json{
+    width: 100%;
+}
+.cards-page {
+
+    &__container {
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: rem(30);
+
+        // justify-items: center;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        // justify-content: center;
+        // @media (min-width:em(620)){
+        //     max-width: rem(280);
+        // }
+        // @media (max-width: em(620)){
+        //      align-items: center; 
+        // }
+    }
+
+    &__image {
+        &_json{
+            padding: 0px 0px 0px 0px;
+        }
+        padding: 0px 0px 100% 0px;
+        &:not(:last-child) {
+            margin: 0px 0px rem(15) 0px;
+        }
+        img{
+           max-width: 100%;
+          
+        }
+    }
+
+    &__title {
+        flex: 1 1 auto !important;
+        display: inline-block;
+        color: #222;
+        font-family: Tenor Sans;
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: 120%; /* 21.6px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(15) 0px;
+        }
+        @media (max-width: em(620)){
+              text-align: center;
+        }
+        
+    }
+
+    &__price {
+        color: #D8A47A;
+        font-size: rem(18);
+        font-weight: 700;
+        line-height: 120%; /* 21.6px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(20) 0px;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: rem(16);
+        font-weight: 700;
+        @media (max-width: em(620)){
+            gap: rem(35);
+       }
+        justify-content: space-between !important;
+    }
+
+    &__button-org {
+        color: #F8F3EF;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        min-height: rem(45);
+        padding: 0px rem(15);
+        border-radius: 5px;
+        background: var(--123, linear-gradient(94deg, #E2AE80 0%, #CC9872 100%));
+    
+	@media (any-hover: hover) {
+		&:hover {
+            background: linear-gradient(94deg, #F1C49C 0%, #D2A27E 100%);
+           
+		}
+        
+	}
+    }
+
+    &__button-tr {
+        background: transparent;
+        border: rem(2) solid  #CC9872 ;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        min-height: rem(45);
+        padding: 0px rem(15);
+        border-radius: 5px;
+       
+    
+	@media (any-hover: hover) {
+		&:hover {
+            background: linear-gradient(94deg, #F1C49C 0%, #D2A27E 100%);
+           color:#fff;
+		}
+        
+	}
+    }
+}
+.ibg {
+}

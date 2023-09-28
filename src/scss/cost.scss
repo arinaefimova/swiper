@@ -1,0 +1,278 @@
+.cost-title{
+    max-width: rem(830);
+}
+
+.main-page {
+
+    &__data {
+        color:#fff;
+    }
+    &__time {color:#fff;
+    }
+}
+//========================================================================================================================================================
+
+.calcs {
+
+    &__container {
+    }
+
+    &__row {
+        
+        
+        @media (min-width:$tablet){
+            display: grid;
+            grid-template-columns: 1fr rem(340);
+            gap: rem(75);
+        }
+    }
+
+    &__content {
+        @media (max-width:$tablet){
+            margin-bottom: rem(30);
+        }
+    }
+
+    &__filter {
+    }
+}
+.content-calcs {
+
+    &__text {
+    }
+}
+.filter-calcs {
+
+    &__border {
+        border-radius: 30px;
+        border: 2px solid var(--123, #E2AE80);
+        padding: rem(40) rem(30) rem(45) rem(30);
+    }
+
+    &__label {
+        color: #222;
+        font-size: rem(20);
+        font-weight: 700;
+        line-height: 124.523%; /* 24.905px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(25) 0px;
+        }
+    }
+
+    &__select-label {
+        display: inline-block;
+        color: #222;
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 124.523%; /* 19.924px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(7) 0px;
+        }
+    }
+
+    &__select {
+        
+    }
+
+    &__checkbox {
+        
+        &:not(:last-child) {
+            margin: 0px 0px rem(23) 0px;
+        }
+
+    }
+
+    &__textarea-label {
+        display: inline-block;
+        color: #222;
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 124.523%; /* 19.924px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(7) 0px;
+        }
+    }
+
+    &__textarea {
+        border-radius: 5px;
+        border: 1px solid var(--123, #E2AE80);
+        background: #FFF;
+        width: 100%;
+        min-height: rem(47);
+        textarea{
+            outline: none;
+        }
+        &::placeholder{
+            padding: rem(13) rem(23);
+            
+        }
+        &:not(:last-child) {
+            margin: 0px 0px rem(23) 0px;
+        }
+    }
+
+    &__quantity-label {
+        display: inline-block;
+        color: #222;
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 124.523%; /* 19.924px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(7) 0px;
+        }
+    }
+
+    &__quantity {
+        &:not(:last-child) {
+            margin: 0px 0px rem(23) 0px;
+        }
+    }
+}
+
+//========================================================================================================================================================
+.calcs {
+
+    &__content {
+    }
+}
+.content-calcs {
+
+    &__text {
+        color: #000;
+        font-size: rem(24);
+        font-weight: 400;
+        line-height: math.div(27 ,24 );
+        &:not(:last-child) {
+            margin: 0px 0px rem(40) 0px;
+        }
+    }
+
+    &__spollers {
+        border-radius: 10px;
+        background: #FFF;
+        padding: rem(25);
+        max-width: rem(515);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom",60 ,25 );
+        }
+    }
+
+    &__label {
+        color: #000;
+        font-size: rem(35);
+        font-weight: 700;
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__text-2 {
+        color: #000;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+        &:not(:last-child) {
+            margin-bottom: rem(25);
+        }
+    }
+
+    &__sub-text-list {
+        color: #000;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+        
+    }
+
+    &__dot-list {
+        padding: 0px 0 0px rem(45);
+        &:not(:last-child) {
+            margin-bottom: rem(30);
+        }
+
+    }
+
+    &__dot-item {
+        list-style: disc;
+        color: #000;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+    }
+
+    &__label-small {
+        color: #000;
+        font-size: rem(28);
+        font-weight: 700;
+        &:not(:last-child) {
+            margin-bottom: rem(30);
+        }
+    }
+
+    &__image {
+        &:not(:last-child) {
+            margin: 0px 0px rem(35) 0px;
+        }
+
+        &_1 {
+            padding-bottom: percent(645,800);
+        }
+
+        &_2 {
+            padding-bottom: percent(669,645);
+        }
+
+        &_3 {
+            padding-bottom: percent(430,645);
+        }
+
+        &_4 {
+            padding-bottom: percent(430,645);
+        }
+
+        &_5 {
+            padding-bottom: percent(645,645);
+        }
+    }
+}
+
+.spollers {
+
+    &__item {
+        color: #000;
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: 176.523%; /* 28.244px */
+    }
+
+    &__title {
+        color: #000;
+        font-size: rem(24);
+        font-weight: 700;
+        line-height: 140.023%; /* 33.605px */
+        
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__body {
+    }
+
+    &__list {
+       padding: 0px rem(20) 0px 0px;
+        li{
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+            }
+        }
+    }
+
+}
+.svgg {
+}
+.ibg {
+}
+
+
+

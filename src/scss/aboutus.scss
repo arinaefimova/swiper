@@ -1,0 +1,134 @@
+
+.page {
+
+    &__steps {
+    }
+}
+
+
+.aboutcompany-page {
+    &_dark {
+        background: #34353D;
+        @include adaptiveValue("padding-top",85 ,30 );
+        @include adaptiveValue("padding-bottom",115 ,40 );
+    }
+
+    &__container {
+    }
+
+    &__row {
+        
+        
+    }
+
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(300px,1fr));
+        // display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        
+        @include adaptiveValue("gap",55 ,25 );
+        @media (max-width:$tablet){
+            grid-template-columns: repeat(1,minmax(280px,1fr));
+            
+            justify-items: center;
+            &:not(:last-child) {
+                margin: 0px 0px rem(35) 0px;
+            }
+        }
+
+        
+        &_rev{
+            @media (max-width:$tablet){
+              display: flex;
+              flex-direction: column-reverse;
+              
+            }
+
+        }
+    }
+
+    &__image {
+        // @media (min-width:$tablet){
+              
+        //     flex: 0 1 50%;
+        //     padding: 0px 0px 41% 0px;
+        // }
+        // padding: 0px 0px 81% 0px;
+        border-radius: 40px;
+        
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__text {
+        flex: 0 1 50%;
+        color: #222;
+       
+        @include adaptiveValue("font-size",20 ,16 );
+        font-weight: 400;
+        line-height: math.div(25 ,20 );
+        p{
+            &:not(:last-child) {
+                margin: 0px 0px rem(25) 0px;
+            }
+        }
+        @media (max-width:$tablet){
+            text-align: center;
+        }
+
+    }
+}
+//========================================================================================================================================================
+
+.ourclients-page {
+
+    &__container {
+    }
+
+    &__header {
+        &:not(:last-child) {
+            margin: 0px 0px rem(35) 0px;
+        }
+    }
+
+    &__brands {
+    }
+}
+.second{
+    @media (max-width:$mobile){
+         
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.brands-slider {
+    
+    &__body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .swiper-wrapper{
+            align-items: center !important;
+            // justify-content: space-between;
+        }
+        .swiper-slide{
+            margin: 0px 0px 0px 0px;
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    &__slide {
+        text-align: center;
+        align-self: center;
+        img{
+            max-width: 100%;
+        }
+        .swiper-slide{
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}

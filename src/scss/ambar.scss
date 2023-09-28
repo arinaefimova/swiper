@@ -1,0 +1,162 @@
+
+.aboutcompany-page {
+
+
+    &__header {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom",55 ,20 );
+        }
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(rem(200),rem(260)));
+        gap: rem(17);
+        grid-template-areas: 
+        "image1 image2"
+        "image3 image2"
+        "image3 image4 "
+       
+        ;
+        @media (max-width:$mobileSmall){
+            grid-template-columns: repeat(2, minmax(rem(150),rem(260)));
+            gap: rem(10);
+        }
+    }
+
+    &__image-1 {
+        grid-area: image1;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__image-2 {
+        grid-area: image2;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__image-3 {
+        grid-area: image3;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__image-4 {
+        grid-area: image4;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.steps {
+
+    &__header {
+        &:not(:last-child) {
+            margin: 0px 0px rem(45) 0px;
+        }
+    }
+    &__list {
+        padding: 0px 0 0px rem(20);
+        text-align: left;
+        li{
+            &:not(:last-child) {
+                margin: 0px 0px rem(20) 0px;
+            }
+        }
+        
+    }
+
+    &__item {
+        list-style: disc;
+        color: #F8F3EF;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+    }
+}
+//========================================================================================================================================================
+
+.eco-page {
+
+    &__container {
+    }
+
+    &__header {
+        &:not(:last-child) {
+            margin: 0px 0px rem(54) 0px;
+        }
+        @media (max-width:$mobileSmall){
+            &:not(:last-child) {
+                margin: 0px 0px rem(34) 0px;
+        }
+    }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(rem(400),1fr) );
+        align-items: center;
+        @include adaptiveValue("gap",70 ,35 );
+        @media (max-width:$mobileSmall){
+            grid-template-columns: repeat(auto-fit,minmax(rem(290),1fr) );  
+        }
+    }
+
+    &__content {
+    }
+
+    &__label {
+        color: #222;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+        &:not(:last-child) {
+            margin: 0px 0px rem(30) 0px;
+        }
+    }
+
+    &__list {
+        padding: 0px 0px 0px rem(20);
+        li{
+            &:not(:last-child) {
+                margin: 0px 0px rem(20) 0px;
+            }
+        }
+    }
+
+    &__item {
+        color: #222;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: math.div(24 ,20 );
+        span{
+            font-weight: 500;
+        }
+    }
+
+    &__image {
+        padding: 0px 0px 79% 0px;
+    }
+}
+.header-scroll {
+
+    &__content {
+    }
+
+    &__body {
+    }
+
+    &__title-first {
+    }
+
+    &__title-second {
+    }
+}
+.ibg {
+}
+
+
+

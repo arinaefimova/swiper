@@ -1,0 +1,239 @@
+
+.wherewework {
+
+    &__container {
+    }
+
+    &__header {
+        &:not(:last-child) {
+            
+            margin: 0px 0px rem(20) 0px;
+        }
+    }
+
+    &__blocks {
+        
+       
+       
+    }
+
+    &__block {
+        display: flex;
+        padding: rem(50);
+        align-items: center;
+        border: 1px solid #D19D76;
+        border-radius: rem(40);
+        @media (max-width:$tablet){
+            flex-direction: column;
+          
+            justify-content: center;
+        }
+
+        
+    }
+
+    &__map-box {
+        flex: 0 1 50%;
+        @media (max-width:$tablet){
+            &:not(:last-child) {
+                margin: 0px 0px rem(30) 0px;
+            }
+        }
+    }
+
+    &__map {  
+        position: relative;
+        padding: 0px 0px 51% 0px;
+       @media (max-width:$tablet){
+        padding: 0px 0px 0px 0px;
+       }
+        
+        iframe{
+           
+            max-width: 100%;
+            height: 100%;
+           
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @media (max-width:$tablet){
+                position: relative;
+                width: rem(400);
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__contacts {
+
+    }
+}
+.header-scroll {
+
+    &__content {
+    }
+
+    &__body {
+    }
+
+    &__title-first {
+    }
+
+    &__title-second {
+    }
+
+    &__buttons {
+    }
+
+    &__button {
+    }
+}
+.center-sl {
+}
+.button {
+
+    &_b {
+    }
+
+    &_t {
+    }
+}
+.tabs {
+
+    &__nav-btn {
+    }
+}
+.active {
+}
+.contacts-wherewework {
+    flex: 0 1 50%;
+   margin: 0px 0px 0px rem(85);
+   @media (max-width:$tablet){
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+   }
+
+    &__address {
+        color: #222;
+        font-size: rem(20);
+        font-weight: 500;
+        span{
+            font-weight: 700;
+        }
+        &:not(:last-child) {
+            margin: 0px 0px rem(30) 0px;
+        }
+    }
+
+    &__callback {
+        &:not(:last-child) {
+            margin: 0px 0px rem(30) 0px;
+        }
+    }
+
+    &__tell {
+        display: inline-block;
+        color: #222;
+        font-size: rem(20);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        
+
+        &::after{
+            content:'';
+            margin: 0px 0px 0px rem(10);
+            display: inline-block;
+            background: url('../img/wherewework/w.svg') 0 0 no-repeat;
+            height: rem(36);
+            width: rem(30);
+           @media (max-width:$mobileSmall){
+             display: none; 
+           }
+        }
+        
+    }
+
+    &__iconka {
+        
+    }
+    &__icon {
+        &__u{
+            
+        
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                width: rem(15);
+                height: rem(15);
+                background: url('../img/wherewework/y.svg') 0 0 no-repeat; 
+            
+        }
+    }
+
+    &__messages {
+        &:not(:last-child) {
+            margin: 0px 0px rem(30) 0px;
+        }
+
+    }
+
+    &__emal {
+        color: #CE9A74;
+        font-size:rem(20);
+        font-weight: 500;
+        display: inline-block;
+        &:not(:last-child) {
+            margin: 0px 0px rem(10) 0px;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    &__cooperation {
+        color: #222;
+        font-size: rem(14);
+        font-weight: 300;
+    }
+
+    &__social {
+    }
+
+    &__social-text {
+        color: #222;
+        font-size: rem(18);
+        font-weight: 400;
+        &:not(:last-child) {
+            margin: 0px 0px rem(10) 0px;
+        }
+    }
+
+    &__social-icons {
+        
+    }
+}
+
+
+
+
+
+.tabs__nav-btn.active {
+    background: var(--123, linear-gradient(94deg, #E2AE80 0%, #CC9872 100%));
+    border:0;
+    color: #fff;
+}
+
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}

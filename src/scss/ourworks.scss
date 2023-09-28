@@ -1,0 +1,197 @@
+.main-page {
+
+ 
+    &__links {
+        display:none;
+        @media (min-width: em(450)){
+            display: flex;
+            gap: rem(35);
+            padding: 0px 0px 0px rem(15);
+        
+            color:#fff;
+        }
+    }
+
+    &__allback {
+        @media (max-width: em(370)){
+            &:not(:last-child) {
+                margin: 0px 0px rem(15) 0px;
+            }
+              
+        }
+    }
+
+    &__back {
+        &_black{
+            color: rgba(34, 34, 34, 1);
+        }
+    }
+
+    &__main {
+        span{
+            opacity: 0.7;
+        }
+    }
+}
+//========================================================================================================================================================
+
+.filters {
+    //padding: 0px 0px 400px 0px;
+    &__container {
+    }
+
+    &__title {
+        color: #C38F65;
+        font-size: rem(20);
+        font-weight: 500;
+        &:not(:last-child) {
+            margin: 0px 0px rem(15) 0px;
+        }
+    }
+
+    &__labels {
+        
+        &:not(:last-child) {
+            margin: 0px 0px rem(40) 0px;
+        }
+    }
+
+    &__items {
+        
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        gap: rem(25);
+        @media (max-width:$pc){
+            grid-template-columns: repeat(4, auto);
+        }
+        @media (max-width: em(800)){
+            grid-template-columns: repeat(3, auto);
+        }
+        @media (max-width: em(570)){
+            grid-template-columns: repeat(2, auto);
+            gap: rem(10);
+        }
+       
+    }
+    &__label {
+        border-radius: rem(5);
+        border: 1px solid #D8A47A;
+        padding: rem(15) rem(20);
+        color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(16);
+        font-weight: 500;
+        max-width: rem(195);
+        text-align: center;
+        height: 100%;
+        cursor: pointer;
+        line-height: math.div(20 ,16 );
+       @media (max-width: em(570)){
+        padding: rem(15) rem(10);
+       }
+        &._active{
+            color:#fff;
+            background: var(--123, linear-gradient(94deg, #E2AE80 0%, #CC9872 100%));
+        }
+    }
+}
+.hide{
+    display: grid;
+    animation: a1  forwards;
+    
+
+}
+
+@keyframes a1 {
+   to{
+   
+    display: none;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border:0;
+   }
+}
+
+.filters {
+
+    &__cover {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: rem(25);
+        
+       
+       
+
+    }
+    &__row{
+       
+        
+    }
+
+    &__column {
+        
+         
+        &:not(:last-child) {
+            margin: 0px 0px rem(25) 0px;
+        }
+        
+      
+        position: relative;
+        // flex: 0 1 50%;
+      
+    }
+    &__box{
+        
+    }
+
+    &__content {
+        padding: rem(35);
+        position: absolute;
+         bottom: 0;
+        left: 0;
+        z-index: 2;
+        text-align: left; 
+    }
+
+    &__article {
+        color: #F8F3EF;
+        font-size: rem(20);
+        font-weight: 700;
+        &:not(:last-child) {
+            margin: 0px 0px rem(30) 0px;
+        }
+    }
+    &__more {
+        display: inline-block;
+        color: #CF9B74;
+        font-size: rem(14);
+        font-weight: 500;
+        
+        &::after{
+            content:'';
+            display: inline-block;
+            background: url('../img/slider/arrt.svg') left 0 no-repeat;
+            width: rem(10);
+            height: rem(10);
+            margin: 0px 0px 0px rem(5);
+            
+        }
+        @media (any-hover: hover){
+            &:hover{
+                
+                text-decoration-line: underline;
+            }
+        }
+    }
+    &__image {
+        padding: 0px 0px 100% 0px;
+        border-radius: rem(40);
+        background-color: rgba(37, 37, 44, 0.70) ;
+        background-blend-mode: overlay;
+    }
+}
+

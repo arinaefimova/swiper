@@ -1,0 +1,138 @@
+.popup--dark {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.popup {
+    position: fixed;
+   
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+
+    &__window {
+        width: rem(400);
+       
+        border-radius: rem(15);
+        background: #F3F3F3;
+        z-index: 201;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__card {
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    &__all{
+        padding: rem(8)  rem(30) rem(24) rem(30);
+        text-align: center;
+    }
+    &__close {
+        align-self: flex-end;
+        font-size: rem(27);
+        color: rgba(195, 143, 101, 1);
+        padding: rem(18) rem(18) 0 rem(18);
+    }
+
+    &__header {
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__close {
+        
+    }
+
+    &__title {
+        color: #000;
+        font-size: rem(24);
+        font-weight: 700;
+        line-height: 141.523%; /* 33.965px */
+        &:not(:last-child) {
+            margin: 0px 0px rem(11) 0px;
+        }
+    }
+
+    &__text {
+        color: #000;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: 141.523%; /* 19.813px */
+       
+    }
+
+   
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px rem(44);
+        margin: rem(40) 0px 0px 0px;
+    }
+
+    &__policy {
+        max-width: rem(200);
+        color: #636363;
+        font-size: rem(12);
+        font-weight: 300;
+        text-align: center;
+       align-self: center;
+       
+        margin: rem(15) 0px 0px 0px;
+    }
+}
+.hidden{
+     display: none;
+}
+
+
+.form {
+    
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__name {
+        color: #222;
+        font-size: rem(16);
+        font-weight: 700;
+        align-self: flex-start;
+        &:not(:last-child) {
+            margin: 0px 0px rem(5) 0px;
+        }
+    }
+
+    &__input {
+        outline: none;
+        height: rem(43);
+        width: 100%;
+        padding: rem(20);
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__tell {
+        color: #222;
+        font-size: rem(16);
+        font-weight: 700;
+        &:not(:last-child) {
+            margin: 0px 0px rem(5) 0px;
+        }
+    }
+
+    &__button {
+        
+    }
+}
